@@ -14,12 +14,17 @@ namespace ArrayList
             MyList = new System.Collections.ArrayList();
 
             MyList.Add("aaa");
-            MyList.Add("bbb");
-            MyList.Add("ccc");
+            MyList.Add("bbbb");
+            MyList.Add("cc");
 
             Console.WriteLine("Det finns {0} värden i listan",MyList.Count);
 
-
+            foreach (string s in MyList)
+            {
+                Console.WriteLine("[{2}] Value: {0} ({1})", s, 
+                                                            s.Length, 
+                                                            MyList.IndexOf(s));
+            }
 
         }
     }
