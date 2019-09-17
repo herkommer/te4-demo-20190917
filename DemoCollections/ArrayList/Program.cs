@@ -14,15 +14,22 @@ namespace ArrayList
             MyList = new System.Collections.ArrayList();
 
             MyList.Add("aaa");
+            MyList.Add("Hello");
             MyList.Add("bbbb");
+            MyList.Add("Kalle Anka");
             MyList.Add("cc");
+            MyList.Add("Arne Anka");
 
             Console.WriteLine("Det finns {0} värden i listan", MyList.Count);
             PrintArrayListValues(MyList);
 
+            Console.WriteLine("===REVERSE ORDER===");
             MyList.Reverse();
             PrintArrayListValues(MyList);
 
+            Console.WriteLine("===SORTING===");
+            MyList.Sort();
+            PrintArrayListValues(MyList);
 
         }
 
